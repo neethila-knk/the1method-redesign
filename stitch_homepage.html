@@ -1,0 +1,610 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>The 1 Method | Academy of Spiritual Medicine</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#0b1c30",
+                    "secondary-fixed-dim": "#b8c4ff",
+                    "secondary": "#3755c3",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-surface-variant": "#45464d",
+                    "primary": "#000000",
+                    "tertiary-fixed-dim": "#c3c7cb",
+                    "tertiary": "#000000",
+                    "primary-container": "#131b2e",
+                    "on-secondary-fixed-variant": "#173bab",
+                    "background": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#171c1f",
+                    "surface": "#f8f9ff",
+                    "outline-variant": "#c6c6cd",
+                    "inverse-on-surface": "#eaf1ff",
+                    "primary-fixed": "#dae2fd",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#d3e4fe",
+                    "surface-tint": "#565e74",
+                    "outline": "#76777d",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#dfe3e7",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#dce9ff",
+                    "inverse-primary": "#bec6e0",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#001453",
+                    "tertiary-container": "#171c1f",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-dim": "#cbdbf5",
+                    "on-tertiary-container": "#808488",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "secondary-container": "#708cfd",
+                    "surface-container": "#e5eeff",
+                    "on-tertiary-fixed-variant": "#43474b",
+                    "inverse-surface": "#213145",
+                    "on-secondary-container": "#00217a",
+                    "on-primary-container": "#7c839b",
+                    "surface-variant": "#d3e4fe",
+                    "secondary-fixed": "#dde1ff",
+                    "surface-container-low": "#eff4ff",
+                    "surface-bright": "#f8f9ff",
+                    "on-background": "#0b1c30"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "gutter": "32px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "section-gap": "120px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Libre Caslon Text"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-sm": ["Libre Caslon Text"],
+                    "label-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .hero-gradient { background: linear-gradient(180deg, rgba(248, 249, 255, 0) 0%, rgba(248, 249, 255, 1) 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-fixed-dim">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-on-surface/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<span class="font-headline-sm text-headline-sm tracking-tight text-on-surface dark:text-surface-bright">The 1 Method</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim border-b border-secondary pb-1" href="#">Methodology</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Academy</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Healing</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Community</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors" href="#">Articles</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md hover:opacity-80 transition-all duration-300 scale-95 active:scale-100">Apply Now</button>
+</div>
+</nav>
+<!-- Cinematic Hero -->
+<section class="relative min-h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJW7cspwmQUrYDPkfNZHmmLQkOD4f1xj200oA-a7qzXS7p5-_pEYr-Ceq-cg9nIff5LnTUZN9CH63acDKP5BcBKCFClhPZz2-2d_GMJPSauOuS3HFgzgzQFCgeVHSnlFLREuHltyHT0fkyV1_d7Jh0q3lNJ9pVzu2OfZ5naif9yX0BhR7hGy9FRVHl569mRZxPJ9O1yDBOTHxV2h0mQHPxNEa4pGTt0fgHEJRzmjHd6PMQYSYugBosz-ChTn-U2BIx8w">
+<div class="absolute inset-0 hero-gradient"></div><div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-0"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full pt-20">
+<div class="max-w-3xl relative z-10">
+<h1 class="font-display-lg text-display-lg text-primary mb-6 reveal active">The 1 Method: Where Spiritual Medicine Meets Clinical Excellence</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 reveal active">An International Academy for Consciousness, Rehabilitation, and Transformational Education led by Osie Steinberg.</p>
+<div class="flex flex-wrap gap-4 reveal active">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md hover:shadow-xl transition-all">Explore Academy</button>
+<button class="border border-outline px-10 py-4 rounded-lg font-label-md hover:bg-surface-container transition-all">Watch the Method</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="py-16 bg-surface-container-low border-y border-outline-variant/30 border-outline-variant/20"><div class="max-w-container-max mx-auto px-margin-desktop"><div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-start justify-items-center"><div class="group flex flex-col items-center text-center gap-4 cursor-default"><div class="w-12 h-12 flex items-center justify-center text-secondary transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida/AP1WRLuF2cchskML1bvkjHc6vlIE7rOkeWuRhnPp2Evs4mJkaaaXsBpTse8L4ojiTqSVue9x00Rdb55Ia7hUah5w3Fsp2bIWJesxSbocfSPw16N03qM3raj1QfnAuJnPrZePScSr2_DbvuOBxfCU7PcPfL6XGQuVtylIeRcGF7VnTCBMBoT_36ObLL8DjfL5CyTdZ3YFb6eYnNSs8dG-1rmLZnqnMajSXhpQwDO2OzWL9hNFV6TF1fB6HK-JlLk" alt="Global Accreditation Council" class="h-8 w-auto"></div><span class="font-label-md text-[10px] md:text-label-md font-bold tracking-[0.15em] text-on-surface group-hover:text-secondary transition-colors duration-300">GLOBAL ACCREDITATION COUNCIL</span></div><div class="group flex flex-col items-center text-center gap-4 cursor-default"><div class="w-12 h-12 flex items-center justify-center text-secondary transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida/AP1WRLvGEKXtAgiSo_sxt54PT4-w2ADhF75n9SSXs655mUHj12abaYE13H32J568y3JI9ZEpcVN-yh_cYBvmPPXgw200iHHx385SfyUwkgqfvi_3bc6nB8cWkZd3gBX-jg1NL51zPAqyRIrCZyqd1WFpgjBnjQqA3s4OounDWpd1vg-wJqN0kXZk-gfgaSuowVUaPLuLnACvd8Low7lbHVgUaI0ZKRF3kqZHv0CRPFGQU-VDbNptJq9J-GH8Hg" alt="WHE Rehabilitation" class="h-8 w-auto"></div><span class="font-label-md text-[10px] md:text-label-md font-bold tracking-[0.15em] text-on-surface group-hover:text-secondary transition-colors duration-300">WHE REHABILITATION</span></div><div class="group flex flex-col items-center text-center gap-4 cursor-default"><div class="w-12 h-12 flex items-center justify-center text-secondary transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida/AP1WRLvqB2DIV6ZQVmg1gdo6P7u5Cm8Zl3b5pqGhbDJYVqu0cUZZWFn0IcnLytA_3flLnlogk4qwXDa5R5_TYz6nrfS6ykzDlv_uLuDhTh1SAZE6yycrcidilJUKMjVuFvTuxtsSEJ9V5VGCSzf92gTQ3XZXxYoQORg2e-MvaljdM11GSQvS38tjpDSpoyntXCvgnZ5IVk4APEPuwhz59L1_otVTfoKhNlg2rfRYy4znJ07K4MHFVPaFy1gI8Q" alt="Intl Medical Assoc" class="h-8 w-auto"></div><span class="font-label-md text-[10px] md:text-label-md font-bold tracking-[0.15em] text-on-surface group-hover:text-secondary transition-colors duration-300">INTL MEDICAL ASSOC</span></div><div class="group flex flex-col items-center text-center gap-4 cursor-default"><div class="w-12 h-12 flex items-center justify-center text-secondary transition-colors duration-300"><img src="https://lh3.googleusercontent.com/aida/AP1WRLsXLv3wgimDdyrz-5CKs85fiJU2e4nj5mrkwwcz1fr_Mi0xNjMiGYH49OVibp2RVNGZoQyTMYTzdrqOcRelkYLYfVjIJxXMpzzSa7GLChea8u9qPxpmqwVrtoONzAHxlmOibM0QMvpfrVH6mg4m4xLGiqXpkDHI27akRYpt2Q2N0GDW40d_tglhwCUWsaJL5_YR2GpT2fM89XsfmGJjhpzk-Nn3YzJPqJpXTWlRq9Kdj1uz7CxAoMO7CgE" alt="Spiritual Science Fed" class="h-8 w-auto"></div><span class="font-label-md text-[10px] md:text-label-md font-bold tracking-[0.15em] text-on-surface group-hover:text-secondary transition-colors duration-300">SPIRITUAL SCIENCE FED</span></div></div></div></section>
+<!-- The Founder Section -->
+<section class="py-section-gap overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 relative reveal active">
+<div class="aspect-[4/5] bg-surface-variant rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMdtaZhWbNM3ulB0yS7toRA9vMA5OgALUj0TaNe2mQGTxs5yuNQXSNOOwtKMRpQ99vqw2lZp0JsBZPF1itOUjXyW6GUGgFrSSe2eOhLUl0cIR71IIbBVVlTZwWndyoi4nCLy_ktPIQmzocrfahcMMMrtm7EKhslVz2KNBR3rVZd0d6pqxkgUkzRJtDzyPghlurrNQ6SKSkAi4P9VwZMnAeJsiFDHn8z9H0bOd3B_C1Wcf0CEba1HHE8lAjnOuuStVyVA">
+</div>
+<div class="absolute -bottom-8 -right-8 bg-on-surface text-surface p-10 max-w-sm hidden md:block">
+<p class="font-headline-sm text-headline-sm italic mb-4">"Healing is the bridge between the physical structure and the consciousness that inhabits it."</p>
+<p class="font-label-md text-label-md text-secondary-fixed-dim">— Osie Steinberg</p>
+</div>
+</div>
+<div class="lg:col-span-5 reveal active" style="transition-delay: 200ms;">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.2em] mb-6 block">Meet the Founder</span>
+<h2 class="font-headline-lg text-headline-lg mb-8">A Visionary Educator &amp; Clinical Pioneer</h2>
+<div class="space-y-6 text-on-surface-variant">
+<p class="font-body-lg text-body-lg">Osie Steinberg is a master clinician whose work spans three decades of integrating deep physiological expertise with spiritual medical paradigms.</p>
+<p class="font-body-md text-body-md">As a Licensed Physiotherapist and Spiritual Medicine practitioner, she has developed 'The 1 Method' to provide a rigorous, evidence-based pathway for practitioners seeking to master the subtle arts of consciousness-based rehabilitation.</p>
+</div>
+<div class="mt-12 pt-12 border-t border-outline-variant flex gap-8">
+<div>
+<div class="font-headline-md text-headline-md">30+</div>
+<div class="font-label-md text-label-md text-outline">Years of Experience</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md">15k+</div>
+<div class="font-label-md text-label-md text-outline">Global Alumni</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology Bento -->
+<section class="py-section-gap bg-primary-container text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-20 reveal active">
+<h2 class="font-headline-lg text-headline-lg mb-4">The Science &amp; Soul of The 1 Method</h2>
+<p class="font-body-lg text-body-lg opacity-70 max-w-2xl mx-auto">A multidimensional approach to human flourishing, grounded in clinical precision and expanded awareness.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-on-primary-fixed-variant p-10 rounded-xl hover:-translate-y-2 transition-transform duration-500 reveal active">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-4xl mb-6">psychology</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Consciousness Architecture</h3>
+<p class="font-body-md text-body-md opacity-80">Understanding the neurological and spiritual blueprints that dictate health outcomes and personal potential.</p>
+</div>
+<div class="bg-on-primary-fixed-variant p-10 rounded-xl hover:-translate-y-2 transition-transform duration-500 reveal active" style="transition-delay: 100ms;">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-4xl mb-6">settings_accessibility</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Structural Alignment</h3>
+<p class="font-body-md text-body-md opacity-80">Clinical physiotherapy techniques refined to address the somatic storage of trauma and energetic blockages.</p>
+</div>
+<div class="bg-on-primary-fixed-variant p-10 rounded-xl hover:-translate-y-2 transition-transform duration-500 reveal active" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-4xl mb-6">auto_awesome</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Spiritual Medicine</h3>
+<p class="font-body-md text-body-md opacity-80">Ancient wisdom protocols for modern rehabilitation, focusing on the subtle energy bodies and cellular memory.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Transformation Journey -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div class="reveal active">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.2em] mb-6 block">Transformation Journey</span>
+<h2 class="font-headline-lg text-headline-lg mb-8">The Path to Mastery</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Our curriculum is designed to take you from foundational understanding to elite professional practice.</p>
+<div class="space-y-12 relative before:content-[''] before:absolute before:left-3 before:top-0 before:bottom-0 before:w-px before:bg-outline-variant">
+<div class="relative pl-12 reveal active">
+<div class="absolute left-0 top-0 w-6 h-6 bg-primary rounded-full ring-4 ring-surface"></div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Phase 01: Foundational Literacy</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Mastering the vocabulary of spiritual medicine and structural mechanics.</p>
+</div>
+<div class="relative pl-12 reveal active">
+<div class="absolute left-0 top-0 w-6 h-6 bg-secondary rounded-full ring-4 ring-surface"></div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Phase 02: Clinical Integration</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Synthesizing consciousness studies with hands-on rehabilitation protocols.</p>
+</div>
+<div class="relative pl-12 reveal active">
+<div class="absolute left-0 top-0 w-6 h-6 bg-on-surface-variant rounded-full ring-4 ring-surface"></div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Phase 03: Professional Vanguard</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Global accreditation and entry into the international faculty network.</p>
+</div>
+</div>
+</div>
+<div class="hidden lg:block relative reveal active" style="transition-delay: 300ms;">
+<div class="sticky top-32">
+<img class="w-full aspect-[3/4] object-cover rounded-2xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVm8i2d3_VQH_V2OX95chJnIR-96KqyMc2P0VhdpeaGTgXKbKaniBephk6tiMplSERZAIe9RLPr_DaioDjJ-NaNZA3xElRgfsIGY-4qTzUDGDzCNJqR4nhLFqwjhxrPEwY8w7UU8S1Y2QSMHiFLH-kPFlaMRh7Bi9Z3HKkvdxargC_Mw6bhGXAgPm2cH5S7p35AlVqhE0PjOc3KVPYIcL_l0GWI9f0IPjjh4oBnuHc2a9HVlfLpQh_3EOP4a5UJEcJbA">
+<div class="absolute inset-0 bg-secondary/10 rounded-2xl mix-blend-multiply"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Courses: MasterClass-style cards -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-16 reveal active">
+<div>
+<h2 class="font-headline-lg text-headline-lg">Academy Curricula</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">World-class education for the next generation of healers.</p>
+</div>
+<button class="font-label-md text-label-md text-secondary hover:underline transition-all">View All Courses →</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Course 1 -->
+<div class="group cursor-pointer reveal active">
+<div class="relative overflow-hidden aspect-[16/9] rounded-xl mb-6">
+<div class="absolute inset-0 bg-on-surface/40 group-hover:bg-on-surface/20 transition-all z-10"></div>
+<div class="w-full h-full bg-cover transition-transform duration-700 group-hover:scale-110" data-alt="A serene cinematic shot of a modern clinical classroom setting with golden morning light filtering through tall windows, professional yet soulful atmosphere, high-end editorial photography style." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCdnah8h99Qwbqb3MTUMEQI-7VtMGU2VXwDc5yMXErPPyHnj_O9NgR0ZhYqa_DptdWm2sgv__AHwn2Z77Yauxgjng2Sq145cl7CIk-ArsjwLeZx-k3D7roDu8WVjupkCBR1NyrrAVoVbBhyz7G4r_zyX71qSqsyHo4upF7-Tf5vL_s8YU1EMkQ7YYOV3kzrLcIUrUHBgi6pQ7XqqSE5YshXJnAucRJvodYSEozBgTd0RSyj3INNOrA9&quot;);"></div>
+<span class="absolute top-4 left-4 z-20 bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-bold">CORE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2 group-hover:text-secondary transition-colors">Foundation of Spiritual Medicine</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">The essential entry point into the integration of consciousness and physical health.</p>
+<div class="mt-4 flex items-center gap-4">
+<span class="font-label-md text-label-md text-outline">12 Modules</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="font-label-md text-label-md text-outline">Accredited</span>
+</div>
+</div>
+<!-- Course 2 -->
+<div class="group cursor-pointer reveal active" style="transition-delay: 100ms;">
+<div class="relative overflow-hidden aspect-[16/9] rounded-xl mb-6">
+<div class="absolute inset-0 bg-on-surface/40 group-hover:bg-on-surface/20 transition-all z-10"></div>
+<div class="w-full h-full bg-cover transition-transform duration-700 group-hover:scale-110" data-alt="Detailed macro shot of hands performing therapeutic alignment on a spine, soft glowing ethereal light surrounding the touch points, blending medical precision with spiritual energy, masterclass quality." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAy8TUyHfVFdxRsiY7-Xu6lfiQYbaixYKIBAJQ9njDjtC2A_JuGMhQ7Tot9FxOmmT3bEPRkUdxL94hmVgzgDonLz766kvgjrQl-Jd4_hN_Gccyy8Nzb2ZiThothoRfTmZNozDwTn29PcYKuFGoGbSjPrI3RXxJ5ta-6SHm1oUrls4qpuODIk-9R5iqZY9crY5rJfAFG6govHs5rGy0_nb2qEoYrkxpI__cpBKhnt1V0cHMi_v06QTxs&quot;);"></div>
+<span class="absolute top-4 left-4 z-20 bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-bold">ADVANCED</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2 group-hover:text-secondary transition-colors">Advanced Rehabilitation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Complex clinical cases re-envisioned through the lens of energetic rehabilitation.</p>
+<div class="mt-4 flex items-center gap-4">
+<span class="font-label-md text-label-md text-outline">24 Modules</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="font-label-md text-label-md text-outline">Clinical</span>
+</div>
+</div>
+<!-- Course 3 -->
+<div class="group cursor-pointer reveal active" style="transition-delay: 200ms;">
+<div class="relative overflow-hidden aspect-[16/9] rounded-xl mb-6">
+<div class="absolute inset-0 bg-on-surface/40 group-hover:bg-on-surface/20 transition-all z-10"></div>
+<div class="w-full h-full bg-cover transition-transform duration-700 group-hover:scale-110" data-alt="An abstract visualization of human consciousness represented by flowing golden light particles in a dark minimalist void, intellectual and spiritual feel, high contrast, cinematic medical art." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDb_wngFnhKyA_xxvngLuGxzF7weyrX0Ng7ANv8z-IegzRfUfYRejl2u1ERh_3X8qbnmUylHvbxyIJFRX5TU7QfP7KK2qIO8BHkTVLCFpHj4xk7XOjqu5uHNX1pizS03yc9Yzsh-HXW0cuNBjM81W3-FyTagEbSnAl3Tg5R0hNWF8W7RSeU9Jfd7zdeC7L-BqWgZLOZ1xn_-W_3XilgA6MbUVujR-7AZ-9RBEgHNJ-6OLV0l9RWajpL&quot;);"></div>
+<span class="absolute top-4 left-4 z-20 bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-bold">RESEARCH</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2 group-hover:text-secondary transition-colors">Consciousness Studies</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Deep dive into the metaphysics of healing and the latest breakthroughs in neuro-spirituality.</p>
+<div class="mt-4 flex items-center gap-4">
+<span class="font-label-md text-label-md text-outline">8 Modules</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="font-label-md text-label-md text-outline">Theoretical</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Library / Horizontal Scroll -->
+<section class="py-section-gap overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop mb-12">
+<h2 class="font-headline-lg text-headline-lg reveal active">The Lecture Library</h2>
+</div>
+<div class="flex gap-8 px-margin-desktop overflow-x-auto no-scrollbar pb-12">
+<!-- Video Thumb 1 -->
+<div class="flex-none w-[400px] group cursor-pointer reveal active">
+<div class="aspect-video bg-surface-variant rounded-xl overflow-hidden relative mb-4">
+<div class="w-full h-full bg-cover" data-alt="A professional video frame showing Osie Steinberg lecturing at a podium, high key lighting, academic setting, clear focused composition." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDqJ6d8bioKy5ohssLVkETMGZBQS_OPku9X9uzZWEO31LzY0ygBZi_2w34O1RF6Jxy4_tVwgExLWoy91k5Pdzk5CdQGmwZKXxNCf9KEHjQIDraF0SjbmvsgKORaA-dp6ayXADBclfMqJUkXA0_hlgFfNEdH6SLFWZ25BlEb32m2uscUEvwr2QhoKPKoO3wSMIWZfQg9LZaVsSL7OtDvXHOkVyktIhiTNGGbl_zqXUPyZILpZwE-T_JX&quot;);"></div>
+<div class="absolute inset-0 flex items-center justify-center bg-on-surface/20 group-hover:bg-on-surface/0 transition-all">
+<span class="material-symbols-outlined text-surface text-6xl opacity-80" style="font-variation-settings: &quot;FILL&quot; 1;">play_circle</span>
+</div>
+</div>
+<h4 class="font-label-md text-label-md font-bold mb-1">Session 42: The Spine as a Soul Conduit</h4>
+<p class="font-body-md text-body-md text-outline">Academy Keynote • 18 mins</p>
+</div>
+<!-- Video Thumb 2 -->
+<div class="flex-none w-[400px] group cursor-pointer reveal active" style="transition-delay: 100ms;">
+<div class="aspect-video bg-surface-variant rounded-xl overflow-hidden relative mb-4">
+<div class="w-full h-full bg-cover" data-alt="Close up of medical instruments resting on a silk cloth, artistic lighting, professional clinical equipment meeting soft textures." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCkFn1leoQicuSu8xxlX99OcpYyfwwW7yNP5yq9wLg_ovancmMSm_E8WENRI-7GLEi2Ap44jTys_TnbQMP5PzLn3pDHpVZy4lrXpL0FA_zA2BtkzIFJ1ViYrgyYrRvve_GYVV2zfDOWtrztiui-jgiWPQ5wz4-gs4Y-JISPr6vLjNLkyN1y1S1CK9s8c-GYVBy77E7xFudWBlj1sybh9O--hxrXhHvtzii-j9kL9T75KuPBaWUB2f3K&quot;);"></div>
+<div class="absolute inset-0 flex items-center justify-center bg-on-surface/20 group-hover:bg-on-surface/0 transition-all">
+<span class="material-symbols-outlined text-surface text-6xl opacity-80" style="font-variation-settings: &quot;FILL&quot; 1;">play_circle</span>
+</div>
+</div>
+<h4 class="font-label-md text-label-md font-bold mb-1">Clinical Tools: Bio-Somatic Mapping</h4>
+<p class="font-body-md text-body-md text-outline">Lab Demo • 45 mins</p>
+</div>
+<!-- Video Thumb 3 -->
+<div class="flex-none w-[400px] group cursor-pointer reveal active" style="transition-delay: 200ms;">
+<div class="aspect-video bg-surface-variant rounded-xl overflow-hidden relative mb-4">
+<div class="w-full h-full bg-cover" data-alt="A wide shot of a tranquil healing center in a natural environment, modern minimalist architecture, lush greenery, peaceful sanctuary atmosphere." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBa1WtBc2Kx5iOQU1bT1qG6p6Vi6htWnjVeiQGY6B7fcg6quTskVpmrwpjCM0B0_2RGr3CcuvfpmRmX5pWnG-kHzQzHBX_dsMFRElKokhHREeUMQZdd0jO0gRxfdwT9yaVykcWC-Pn25bOG1a0qtSYOgxRFm-gq2caeRlkP7B8NcFWfoGPTKSG5A-LY99xIJnNZoLz3Lk5N61r2VpIZ6rmeAaQzTMwVH6S2mH-Cvu7KPFmgIargjTJb&quot;);"></div>
+<div class="absolute inset-0 flex items-center justify-center bg-on-surface/20 group-hover:bg-on-surface/0 transition-all">
+<span class="material-symbols-outlined text-surface text-6xl opacity-80" style="font-variation-settings: &quot;FILL&quot; 1;">play_circle</span>
+</div>
+</div>
+<h4 class="font-label-md text-label-md font-bold mb-1">Retreat Highlight: The Athens Symposium</h4>
+<p class="font-body-md text-body-md text-outline">Community • 12 mins</p>
+</div>
+</div>
+</section>
+<!-- Workshops & Events -->
+<section class="py-section-gap border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-4 reveal active">
+<h2 class="font-headline-lg text-headline-lg mb-6">Upcoming Global Events</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Join the community in person for immersive training and clinical intensives.</p>
+<button class="mt-8 border border-primary px-8 py-3 rounded-lg font-label-md hover:bg-primary hover:text-on-primary transition-all">Download Calendar</button>
+</div>
+<div class="lg:col-span-8 space-y-4">
+<!-- Event Row 1 -->
+<div class="p-8 bg-surface border border-outline-variant rounded-xl flex flex-col md:flex-row items-center gap-8 group hover:shadow-lg transition-all reveal active">
+<div class="text-center md:text-left min-w-[100px]">
+<div class="font-headline-md text-headline-md">OCT 14</div>
+<div class="font-label-md text-label-md text-secondary">2024</div>
+</div>
+<div class="flex-grow">
+<h4 class="font-headline-sm text-headline-sm mb-1">London Masters Intensive</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Three-day clinical certification for physiotherapists.</p>
+</div>
+<div class="text-right">
+<span class="inline-block px-4 py-2 bg-surface-variant rounded-lg font-label-md">London, UK</span>
+</div>
+</div>
+<!-- Event Row 2 -->
+<div class="p-8 bg-surface border border-outline-variant rounded-xl flex flex-col md:flex-row items-center gap-8 group hover:shadow-lg transition-all reveal active" style="transition-delay: 100ms;">
+<div class="text-center md:text-left min-w-[100px]">
+<div class="font-headline-md text-headline-md">NOV 05</div>
+<div class="font-label-md text-label-md text-secondary">2024</div>
+</div>
+<div class="flex-grow">
+<h4 class="font-headline-sm text-headline-sm mb-1">Spirituality in Medicine Summit</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Virtual global conference featuring Osie Steinberg.</p>
+</div>
+<div class="text-right">
+<span class="inline-block px-4 py-2 bg-surface-variant rounded-lg font-label-md">Online</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Private Healing Section -->
+<section class="py-section-gap relative bg-on-surface text-surface overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-30">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5hMf3EDh-qi4jyiGcAT7EiCSSXETZZdcfPBOF-r0aB36KyEq-vo5Vp3AX_Qj4JNaEUU-h8Mtdd5jxlU1_SxhWiKBul-Nibm2KYuYzIZYmSTaU32M0WXAtOnJqa8sW1tMBi4QbrY2GchCSLHhV5heKrBV9GMHrfeCtM2WSZzs59rxh1xP8Sjxn62bUaozIzYk39RJdq6aW9TQUtRsGO51dZFOpzHzRjDYGvzSv-erzNKhwo7v8J-IznEEBxRQL88pcyw">
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="max-w-2xl reveal active">
+<span class="font-label-md text-label-md text-secondary-fixed-dim uppercase tracking-[0.2em] mb-6 block">Bespoke Care</span>
+<h2 class="font-display-lg text-display-lg mb-8">Private Healing &amp; Rehabilitation</h2>
+<p class="font-body-lg text-body-lg opacity-80 mb-10 leading-relaxed">For those seeking the highest level of personalized clinical and spiritual intervention. Osie offers limited 1-on-1 sessions for complex rehabilitation and profound personal transformation.</p>
+<div class="space-y-6 mb-12">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim">verified_user</span>
+<span class="font-body-md text-body-md">Concierge Rehabilitation Programs</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim">psychology_alt</span>
+<span class="font-body-md text-body-md">Consciousness-Focused Clinical Consulting</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim">language</span>
+<span class="font-body-md text-body-md">Available Globally via Premium Travel or Virtual Concierge</span>
+</div>
+</div>
+<button class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-label-md hover:scale-105 transition-all">Request Private Consultation</button>
+</div>
+</div>
+</section>
+<!-- Community Stats Grid -->
+<section class="py-section-gap bg-surface-container-high">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter text-center reveal active">
+<div>
+<div class="font-display-lg text-display-lg text-secondary">42</div>
+<p class="font-label-md text-label-md uppercase text-outline">Countries Represented</p>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-secondary">15k</div>
+<p class="font-label-md text-label-md uppercase text-outline">Graduated Practitioners</p>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-secondary">300+</div>
+<p class="font-label-md text-label-md uppercase text-outline">Medical Clinics Using The Method</p>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-secondary">120k</div>
+<p class="font-label-md text-label-md uppercase text-outline">Healings Facilitated</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-20 reveal active">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.2em] mb-4 block">Voices of the Vanguard</span>
+<h2 class="font-headline-lg text-headline-lg">Impact Across Institutions</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="bg-surface p-12 rounded-xl shadow-sm border border-outline-variant/30 reveal active">
+<p class="font-headline-sm text-headline-sm italic mb-8 leading-relaxed">"The 1 Method provides a clinical bridge that we've been missing for decades. It empowers the practitioner to treat the human, not just the symptom."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-outline-variant rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a male doctor in a white lab coat, kind eyes, modern clinical background, premium soft focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyfN7YI2euf5C0lfY9AP7vdhoX8fICicc--g3G8NK6qt2Tx-t_3KNDlyrrpn5F4wRKTfZWdBuEl8nI2hNEgE5NZTOo1tGT6kVZ_tpvOwb8W8Kev1n6a7jvtCX7myGyjO3IRlQSZhtGY-AShueNh7k8rN8jWRF0X1sxPQfoamO2WyT9rrwebEONMrpbPGdvwyZZuJqMEyK3ngWp8s2vuTiybqQ5UqhaITwNR30ppMoOMJALcvGCH0Pz">
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold">Dr. Julian Vance</div>
+<div class="text-xs text-outline">Director of Orthopedics, SVMC</div>
+</div>
+</div>
+</div>
+<div class="bg-surface p-12 rounded-xl shadow-sm border border-outline-variant/30 reveal active" style="transition-delay: 150ms;">
+<p class="font-headline-sm text-headline-sm italic mb-8 leading-relaxed">"Learning from Osie is a transformative experience. Her depth of physiological knowledge paired with her spiritual wisdom is unlike anything in the field."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-outline-variant rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a female therapist in a bright minimalist office, smiling warmly, wearing a sophisticated linen blazer, academic professional style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAqcmND55lHJ6kZG7UqZd5DOQjttp_Uyz35Od14w5S0jER5Fgc_K4JD7wNrf-7YvPSilIw7QNugmfZ4zDtvoczQecimIY-zeTr10hKFGZcRQzIfS8XGZFKXhNmX8uVI_mg5bEh6k1V-YkFR0L7TAJQH83n-bjE484ZFrD00BOljqwoDzXJO1wIjygq3m6e4UIgSYFF8UPAFtgSLPRD1YASoVrTQ06MBPOUv9fhHi3QelEYlVK3w0qu">
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold">Elena Rodriguez</div>
+<div class="text-xs text-outline">Senior Rehabilitation Specialist</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Journal / Articles -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-16 reveal active">
+<h2 class="font-headline-lg text-headline-lg">The Journal</h2>
+<button class="font-label-md text-label-md text-primary font-bold">Read the Archive →</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<article class="reveal active">
+<div class="aspect-[4/5] bg-surface-variant mb-6 rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Abstract imagery of water ripples in a dark pool reflecting soft blue and white light, minimalist and profound, editorial magazine aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI3Q10F0OckR-FwBxk1vDCAN5n8terabu4UpmONzvxe5WRLUdU6BqWtcKcZpEFLMS75ct8ihCt1bOBDSS9mkFpGycYYqY0e5YX117w1oatsyBnFLLFnj6gFuQ32FWAJuIZqiBB8ULv12Vi0z0qOXNev2bLy6JUIUgYuECMvqinnbr5-atnwAmpfo6Q3jmMusEGPMkbPSb3vXY7XIe1Nhe246DaVhAOgy3gVeNaB1_U8Tv5JUyAwqxr">
+</div>
+<span class="font-label-md text-label-md text-secondary mb-2 block">CLINICAL STUDIES</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">The Somatic Resonance of Neurological Trauma</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Exploring the physical manifestations of consciousness-based injury and new protocols for release.</p>
+</article>
+<article class="reveal active" style="transition-delay: 100ms;">
+<div class="aspect-[4/5] bg-surface-variant mb-6 rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic shot of ancient leather-bound books stacked in a modern high-end library, soft dust motes dancing in sunbeams, scholarly and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsJnVD4Qr0DAS5Z9PkHRuwTmBJsscnrOJpSSysrp-mddT5SMGXuJTcCUseybG8VHH2u6DlbcIUkl56lBRVhMNI0OXBpsFRnakssCzh4PFWUWwcYkdzFJwOgJ7TjVlGPEOWaSlsCpPy9f3XEyv0TU8cVcr33OZTxHw-2mNvunuvuysMujMDv-rCfl42Q0y1zGVKC2XwMZvPSx3hJ4d_XFetLEISKiFr3dhJSO2C08x2MSbO-I-pXUp_">
+</div>
+<span class="font-label-md text-label-md text-secondary mb-2 block">PHILOSOPHY</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Aristotle vs. The Modern Soul: A Healing Divide</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Bridging classical philosophy with contemporary spiritual medicine to find a new middle ground.</p>
+</article>
+<article class="reveal active" style="transition-delay: 200ms;">
+<div class="aspect-[4/5] bg-surface-variant mb-6 rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Detail of a human eye with a complex iris, reflecting a galaxy-like pattern, merging biology with the infinite cosmos, high-resolution scientific photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7ZM7g7GIi9W5CfHKatJobaTzDM-BUzHK2zQ4WrOS8cmsx5XldGyBGTsCtJsrl1RANWQLqtr3PJb2Xcuh3NCUr7FQsheNsGrj4U8vsuJWyQIoyI2mDCPPumart-UCVmsR_KjIjqoASASLA8PRt7wxnm9SkUG5iK-5sEusBpTgXf0RKqW5GqwNQeBRAnvoLI1iG1nziILcEOHsJC6VR3-znZ6LDNR7qM3jSsQZcxeq0jWvXKonVMkoI">
+</div>
+<span class="font-label-md text-label-md text-secondary mb-2 block">CONSCIOUSNESS</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Visionary States in Post-Operative Recovery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Data-driven analysis of patient recovery speeds when consciousness protocols are applied.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-section-gap">
+<div class="max-w-3xl mx-auto px-margin-mobile reveal active">
+<h2 class="font-headline-lg text-headline-lg mb-12 text-center">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<details class="group border-b border-outline-variant pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none py-4">
+<span class="font-headline-sm text-headline-sm">Is this recognized by medical boards?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Yes, our programs carry international accreditation from leading health education boards. Most modules contribute toward Professional Development (CEU) credits for licensed clinicians.</p>
+</details>
+<details class="group border-b border-outline-variant pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none py-4">
+<span class="font-headline-sm text-headline-sm">Do I need a medical degree to join?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">While many of our students are clinical professionals, we offer 'Foundational' tracks open to dedicated practitioners from all backgrounds who meet our admission criteria.</p>
+</details>
+<details class="group border-b border-outline-variant pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none py-4">
+<span class="font-headline-sm text-headline-sm">What is the duration of the Master track?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">The full transformation journey typically takes 18 to 24 months, including clinical practice hours and a final supervised thesis project.</p>
+</details>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-section-gap bg-secondary text-on-secondary text-center">
+<div class="max-w-3xl mx-auto px-margin-mobile reveal active">
+<h2 class="font-headline-lg text-headline-lg mb-6">Join the Vanguard of Spiritual Medicine</h2>
+<p class="font-body-lg text-body-lg mb-10 opacity-80">Receive monthly insights from Osie Steinberg and updates on upcoming academy registrations.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow px-6 py-4 rounded-lg bg-surface text-on-surface border-none focus:ring-2 focus:ring-on-secondary" placeholder="Your Professional Email" type="email">
+<button class="bg-on-surface text-surface px-8 py-4 rounded-lg font-label-md hover:opacity-90 transition-all">Subscribe</button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-on-surface dark:bg-surface-container-lowest text-surface py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-6">
+<span class="font-headline-md text-headline-md text-surface dark:text-on-surface">The 1 Method</span>
+<p class="font-body-md text-body-md opacity-60">Pioneering the future of clinical medicine through consciousness and soul-led rehabilitation.</p>
+</div>
+<div>
+<h5 class="font-label-md text-label-md font-bold mb-6 text-secondary-fixed-dim">Institutional</h5>
+<ul class="space-y-4 font-body-md text-body-md text-outline-variant">
+<li class=""><a class="hover:text-surface transition-colors" href="#">Clinical Governance</a></li>
+<li class=""><a class="hover:text-surface transition-colors" href="#">Global Accreditation</a></li>
+<li class=""><a class="hover:text-surface transition-colors" href="#">Faculty Directory</a></li>
+<li class=""><a class="hover:text-surface transition-colors" href="#">Research Archive</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md font-bold mb-6 text-secondary-fixed-dim">Support</h5>
+<ul class="space-y-4 font-body-md text-body-md text-outline-variant">
+<li class=""><a class="hover:text-surface transition-colors" href="#">Contact Faculty</a></li>
+<li class=""><a class="hover:text-surface transition-colors" href="#">Admissions FAQ</a></li>
+<li class=""><a class="hover:text-surface transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="hover:text-surface transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md font-bold mb-6 text-secondary-fixed-dim">Connect</h5>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-surface/10 rounded-full flex items-center justify-center hover:bg-secondary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">language</span>
+</a>
+<a class="w-10 h-10 bg-surface/10 rounded-full flex items-center justify-center hover:bg-secondary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-section-gap pt-8 border-t border-surface/10 text-center text-outline-variant font-label-md">
+            © 2024 The 1 Method Academy of Spiritual Medicine. All Rights Reserved.
+        </div>
+</footer>
+<script>
+        // Simple Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+</body></html>

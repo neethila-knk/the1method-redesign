@@ -1,0 +1,67 @@
+/* CSS Design System Tokens - The 1 Method Global Academy */
+:root {
+  /* Color Palette - Premium Light & Dark Navy Containers */
+  --color-surface: #f8f9ff;
+  --color-surface-low: #f0f3fa;
+  --color-surface-container: #e4ebf7;
+  --color-surface-high: #d8e3f5;
+  --color-surface-highest: #cbdaf0;
+  
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #45464d;
+  
+  --color-primary: #0b1c30;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0b1c30;
+  
+  --color-secondary: #3755c3;
+  --color-secondary-hover: #2643af;
+  --color-secondary-container: #708cfd;
+  --color-secondary-dim: #b8c4ff;
+  --color-on-secondary: #ffffff;
+  
+  --color-outline: #76777d;
+  --color-outline-variant: #c6c6cd;
+  
+  --color-card-bg: #ffffff;
+  --color-card-border: rgba(11, 28, 48, 0.08);
+  --color-nav-bg: rgba(248, 249, 255, 0.92);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(11, 28, 48, 0.05);
+  --shadow-md: 0 8px 24px rgba(11, 28, 48, 0.08);
+  --shadow-lg: 0 16px 40px rgba(11, 28, 48, 0.12);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+
+  /* Typography */
+  --font-serif: 'Libre Caslon Text', Georgia, serif;
+  --font-sans: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Sizes */
+  --text-display-lg: clamp(2.25rem, 4.5vw + 1rem, 3.75rem); /* 36px to 60px */
+  --text-headline-lg: clamp(1.85rem, 3vw + 1rem, 2.75rem);  /* 30px to 44px */
+  --text-headline-md: clamp(1.35rem, 2vw + 0.5rem, 1.85rem); /* 22px to 30px */
+  --text-headline-sm: clamp(1.15rem, 1.2vw + 0.5rem, 1.35rem); /* 18px to 22px */
+  --text-body-lg: clamp(1rem, 0.5vw + 0.875rem, 1.15rem);
+  --text-body-md: 1rem;
+  --text-body-sm: 0.875rem;
+  --text-label-md: 0.875rem;
+
+  /* Full Width Layout Spacing */
+  --container-max: 100%;
+  --gutter-desktop: clamp(1.5rem, 4vw, 4rem);
+  --gutter-mobile: 1.25rem;
+  --section-gap: clamp(3.5rem, 6vw, 6rem);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Smooth Professional Transitions */
+  --ease-out-smooth: cubic-bezier(0.33, 1, 0.68, 1); /* Buttery smooth UI ease */
+  --transition-fast: 0.3s var(--ease-out-smooth);
+  --transition-normal: 0.5s var(--ease-out-smooth);
+  --transition-slow: 0.8s var(--ease-out-smooth);
+}
