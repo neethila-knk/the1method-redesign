@@ -5,6 +5,7 @@ import { initAccordion } from './modules/accordion.js';
 import { initModals } from './modules/modal.js';
 import { initCarousel } from './modules/carousel.js';
 import { initCMSInspector } from './modules/cms-inspector.js';
+import { initI18n } from './modules/i18n-rtl.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initModals();
   initCarousel();
   initCMSInspector();
+  initI18n();
 
   console.log('⚡ The 1 Method Global Academy App Initialized with CMS-Ready Modules.');
 });

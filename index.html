@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/ecommerce.css">
   <link rel="stylesheet" href="css/cms-inspector.css">
 </head>
 <body>
@@ -30,14 +31,52 @@
       <a href="#" class="nav-brand" data-cms-field="brand_name">The 1 Method</a>
 
       <ul class="nav-menu">
-        <li><a href="#methodology" class="nav-link active" data-cms-field="menu_item_1">Methodology</a></li>
+        <li><a href="#methodology" class="nav-link" data-cms-field="menu_item_1">Methodology</a></li>
         <li><a href="#academy" class="nav-link" data-cms-field="menu_item_2">Academy</a></li>
         <li><a href="#healing" class="nav-link" data-cms-field="menu_item_3">Healing</a></li>
         <li><a href="#community" class="nav-link" data-cms-field="menu_item_4">Community</a></li>
         <li><a href="#journal" class="nav-link" data-cms-field="menu_item_5">Articles</a></li>
+        <li><a href="store.html" class="nav-link" data-cms-field="menu_item_store" style="color: var(--color-secondary); font-weight: 700;">Store</a></li>
       </ul>
 
       <div class="nav-actions">
+        <a href="store.html" class="btn-icon" aria-label="Academy Store" title="Store & Apparatus">
+          <span class="material-symbols-outlined">storefront</span>
+        </a>
+        <a href="cart.html" class="btn-icon" aria-label="Shopping Cart" title="Shopping Cart">
+          <span class="material-symbols-outlined">shopping_bag</span>
+        </a>
+
+        <!-- Luxury Bespoke Language Selector -->
+        <div class="lang-switch-wrap">
+          <button class="lang-switch-btn" aria-label="Select Language" aria-expanded="false" title="Change Language">
+            <span class="material-symbols-outlined lang-globe-icon">language</span>
+            <span class="current-lang-code">EN</span>
+            <span class="material-symbols-outlined lang-arrow-icon">expand_more</span>
+          </button>
+          <div class="lang-dropdown-menu" role="menu">
+            <div class="lang-dropdown-header">Select Language / שפה</div>
+            <button class="lang-opt-btn active" data-lang="en" role="menuitem">
+              <span class="lang-flag">🇺🇸</span>
+              <span class="lang-name">English</span>
+              <span class="lang-badge">International</span>
+              <span class="material-symbols-outlined lang-check">check</span>
+            </button>
+            <button class="lang-opt-btn" data-lang="es" role="menuitem">
+              <span class="lang-flag">🇪🇸</span>
+              <span class="lang-name">Español</span>
+              <span class="lang-badge">Spanish</span>
+              <span class="material-symbols-outlined lang-check">check</span>
+            </button>
+            <button class="lang-opt-btn" data-lang="he" role="menuitem">
+              <span class="lang-flag">🇮🇱</span>
+              <span class="lang-name">עברית</span>
+              <span class="lang-badge">Hebrew (RTL)</span>
+              <span class="material-symbols-outlined lang-check">check</span>
+            </button>
+          </div>
+        </div>
+
         <button class="btn btn-primary" data-open-modal="modal-apply" data-cms-field="nav_cta">Apply Now</button>
         <button class="mobile-toggle btn-icon" aria-label="Open Menu">
           <span class="material-symbols-outlined">menu</span>
@@ -59,8 +98,21 @@
       <li><a href="#healing" class="nav-link">Healing</a></li>
       <li><a href="#community" class="nav-link">Community</a></li>
       <li><a href="#journal" class="nav-link">Articles</a></li>
+      <li><a href="store.html" class="nav-link" style="color:var(--color-secondary); font-weight:700;">Store & Apparatus</a></li>
     </ul>
-    <button class="btn btn-primary" data-open-modal="modal-apply" style="width:100%;">Apply Now</button>
+    <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top: auto;">
+      <!-- Luxury Tactile Mobile Drawer Language Chips -->
+      <div class="drawer-lang-section" style="margin-top:0; padding-top:0; border-top:none;">
+        <span class="drawer-section-label">Language / שפה / Idioma</span>
+        <div class="drawer-lang-pills">
+          <button class="drawer-lang-chip active" data-lang="en">English</button>
+          <button class="drawer-lang-chip" data-lang="es">Español</button>
+          <button class="drawer-lang-chip" data-lang="he">עברית</button>
+        </div>
+      </div>
+      <a href="store.html" class="btn btn-secondary" style="width:100%;">Visit Store</a>
+      <button class="btn btn-primary" data-open-modal="modal-apply" style="width:100%;">Apply Now</button>
+    </div>
   </aside>
 
 

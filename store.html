@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 1 Method Store | Academy of Spiritual Medicine</title>
+  <meta name="description" content="Official Store for The 1 Method Global Academy: Clinical diagnostic kits, somatic spinal tools, published volumes by Osie Steinberg, and international masterclass passports.">
+  <meta name="keywords" content="Spiritual Medicine Store, Clinical Physiotherapy Kits, Osie Steinberg Books, Somatic Spine Wedge, Masterclass Pass">
+
+  <!-- Google Fonts & Material Symbols Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..700;1,300..700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/ecommerce.css">
+  <link rel="stylesheet" href="css/cms-inspector.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       CMS MODULE 01: TOP NAVIGATION HEADER (EXISTING THEME)
+  =========================================== -->
+  <header data-cms-section="top-nav" class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="nav-brand" data-cms-field="brand_name">The 1 Method</a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html#methodology" class="nav-link" data-cms-field="menu_item_1">Methodology</a></li>
+        <li><a href="index.html#academy" class="nav-link" data-cms-field="menu_item_2">Academy</a></li>
+        <li><a href="index.html#healing" class="nav-link" data-cms-field="menu_item_3">Healing</a></li>
+        <li><a href="index.html#community" class="nav-link" data-cms-field="menu_item_4">Community</a></li>
+        <li><a href="index.html#journal" class="nav-link" data-cms-field="menu_item_5">Articles</a></li>
+        <li><a href="store.html" class="nav-link active" data-cms-field="menu_item_store" style="color: var(--color-secondary); font-weight: 700;">Store</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Live Search Trigger -->
+        <button class="btn-icon" data-open-search aria-label="Search Store" title="Search Store">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+
+        <!-- Slide-out Cart Trigger with Dynamic Counter -->
+        <button class="btn-icon" data-open-cart aria-label="Shopping Cart" title="Shopping Cart" style="position: relative;">
+          <span class="material-symbols-outlined">shopping_bag</span>
+          <span class="cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <!-- Luxury Bespoke Language Selector -->
+        <div class="lang-switch-wrap">
+          <button class="lang-switch-btn" aria-label="Select Language" aria-expanded="false" title="Change Language">
+            <span class="material-symbols-outlined lang-globe-icon">language</span>
+            <span class="current-lang-code">EN</span>
+            <span class="material-symbols-outlined lang-arrow-icon">expand_more</span>
+          </button>
+          <div class="lang-dropdown-menu" role="menu">
+            <div class="lang-dropdown-header">Select Language / שפה</div>
+            <button class="lang-opt-btn active" data-lang="en" role="menuitem">
+              <span class="lang-flag">🇺🇸</span>
+              <span class="lang-name">English</span>
+              <span class="lang-badge">International</span>
+              <span class="material-symbols-outlined lang-check">check</span>
+            </button>
+            <button class="lang-opt-btn" data-lang="es" role="menuitem">
+              <span class="lang-flag">🇪🇸</span>
+              <span class="lang-name">Español</span>
+              <span class="lang-badge">Spanish</span>
+              <span class="material-symbols-outlined lang-check">check</span>
+            </button>
+            <button class="lang-opt-btn" data-lang="he" role="menuitem">
+              <span class="lang-flag">🇮🇱</span>
+              <span class="lang-name">עברית</span>
+              <span class="lang-badge">Hebrew (RTL)</span>
+              <span class="material-symbols-outlined lang-check">check</span>
+            </button>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" data-open-modal="modal-apply" data-cms-field="nav_cta">Apply Now</button>
+        <button class="mobile-toggle btn-icon" aria-label="Open Menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 2rem;">
+      <span class="nav-brand">The 1 Method</span>
+      <button class="drawer-close btn-icon" aria-label="Close Drawer"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <ul style="list-style:none; display:flex; flex-direction:column; gap: 1.5rem; margin-bottom: 2rem;">
+      <li><a href="index.html#methodology" class="nav-link">Methodology</a></li>
+      <li><a href="index.html#academy" class="nav-link">Academy</a></li>
+      <li><a href="index.html#healing" class="nav-link">Healing</a></li>
+      <li><a href="index.html#community" class="nav-link">Community</a></li>
+      <li><a href="index.html#journal" class="nav-link">Articles</a></li>
+      <li><a href="store.html" class="nav-link active" style="color:var(--color-secondary); font-weight:700;">Store & Apparatus</a></li>
+      <li><a href="catalog.html" class="nav-link">Shop All Catalog</a></li>
+      <li><a href="cart.html" class="nav-link">Shopping Cart</a></li>
+    </ul>
+    <div style="margin-top: auto; display:flex; flex-direction:column; gap: 1rem;">
+      <!-- Luxury Tactile Mobile Drawer Language Chips -->
+      <div class="drawer-lang-section">
+        <span class="drawer-section-label">Language / שפה / Idioma</span>
+        <div class="drawer-lang-pills">
+          <button class="drawer-lang-chip active" data-lang="en">English</button>
+          <button class="drawer-lang-chip" data-lang="es">Español</button>
+          <button class="drawer-lang-chip" data-lang="he">עברית</button>
+        </div>
+      </div>
+      <button class="btn btn-primary" data-open-modal="modal-apply" style="width:100%;">Apply Now</button>
+    </div>
+  </aside>
+
+
+  <!-- ==========================================
+       CMS MODULE 02: HERO / PROMOTIONAL AREA
+  =========================================== -->
+  <!-- ==========================================
+       CMS MODULE 02: STORE HERO SECTION (CLEAN & EDITORIAL)
+  =========================================== -->
+  <section data-cms-section="store-hero" class="store-hero">
+    <div class="container">
+      <div class="store-hero-grid">
+        
+        <!-- Left: Confident Editorial Title & CTAs -->
+        <div class="store-hero-content reveal">
+          <span class="label-uppercase" style="color: var(--color-secondary-dim); margin-bottom: 1rem; display: block; letter-spacing: 0.12em;" data-cms-field="hero_label">
+            Official Academy Store & Monograph Archive
+          </span>
+
+          <h1 class="store-hero-title" data-cms-field="hero_title">
+            Clinical Precision.<br>
+            Instruments of Awakening.
+          </h1>
+
+          <p class="store-hero-desc" data-cms-field="hero_desc">
+            Official diagnostic apparatus, somatic spinal rehabilitation tools, and definitive clinical monographs by Osie Steinberg. Developed across three decades of clinical mastery and delivered to practitioners worldwide.
+          </p>
+
+          <div class="store-hero-actions">
+            <a href="catalog.html" class="btn btn-secondary" data-cms-field="hero_cta_primary">
+              Explore All Products
+              <span class="material-symbols-outlined dir-flip" style="font-size: 18px;">arrow_forward</span>
+            </a>
+            <a href="catalog.html?category=publications" class="btn btn-outline-light" data-cms-field="hero_cta_secondary">
+              Academic Monographs
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Grounded Physical Product Showcase (Solid, No floating cards) -->
+        <div class="store-hero-showcase reveal delay-100">
+          <div class="store-hero-image-wrap">
+            <img src="assets/images/course-spiritual-medicine.jpg" alt="The 1 Method Clinical Apparatus and Monograph" data-cms-field="hero_image">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CMS MODULE 03: TRUST & VALUE PROPOSITIONS
+  =========================================== -->
+  <section data-cms-section="store-trust" class="store-trust-bar">
+    <div class="container">
+      <div class="trust-features-grid">
+        <div class="trust-feature-item reveal">
+          <div class="trust-feature-icon">
+            <span class="material-symbols-outlined">local_shipping</span>
+          </div>
+          <div>
+            <h4 class="trust-feature-title" data-cms-field="trust_1_title">Worldwide Insured Transit</h4>
+            <p class="trust-feature-desc" data-cms-field="trust_1_desc">Tracked diplomatic courier shipping to 42 countries worldwide.</p>
+          </div>
+        </div>
+
+        <div class="trust-feature-item reveal delay-100">
+          <div class="trust-feature-icon">
+            <span class="material-symbols-outlined">verified</span>
+          </div>
+          <div>
+            <h4 class="trust-feature-title" data-cms-field="trust_2_title">Accredited Clinical Quality</h4>
+            <p class="trust-feature-desc" data-cms-field="trust_2_desc">Every instrument manufactured to clinical physiotherapy tolerances.</p>
+          </div>
+        </div>
+
+        <div class="trust-feature-item reveal delay-200">
+          <div class="trust-feature-icon">
+            <span class="material-symbols-outlined">published_with_changes</span>
+          </div>
+          <div>
+            <h4 class="trust-feature-title" data-cms-field="trust_3_title">30-Day Clinical Guarantee</h4>
+            <p class="trust-feature-desc" data-cms-field="trust_3_desc">Try in your practice with full satisfaction and easy return policy.</p>
+          </div>
+        </div>
+
+        <div class="trust-feature-item reveal delay-300">
+          <div class="trust-feature-icon">
+            <span class="material-symbols-outlined">lock</span>
+          </div>
+          <div>
+            <h4 class="trust-feature-title" data-cms-field="trust_4_title">256-Bit SSL Encrypted</h4>
+            <p class="trust-feature-desc" data-cms-field="trust_4_desc">Bank-grade security and immediate digital receipt delivery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CMS MODULE 04: SLEEK CATEGORIES SHOWCASE
+  =========================================== -->
+  <section data-cms-section="product-categories" class="section">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 2rem;" class="reveal">
+        <div>
+          <span class="label-uppercase mb-2" data-cms-field="cat_tag">Curated Collections</span>
+          <h2 data-cms-field="cat_headline">Browse by Category</h2>
+        </div>
+        <a href="catalog.html" class="btn btn-ghost" data-cms-field="cat_view_all">
+          View All Products <span class="material-symbols-outlined dir-flip" style="font-size:16px;">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="category-showcase-grid">
+        <!-- Category 1 -->
+        <a href="catalog.html?category=clinical-kits" class="category-card reveal delay-100">
+          <div class="category-card-media">
+            <img src="assets/images/course-spiritual-medicine.jpg" alt="Clinical Kits" data-cms-field="cat_1_img">
+            <div class="category-card-overlay">
+              <div>
+                <h3 class="category-card-title" data-cms-field="cat_1_title">Clinical Diagnostic Kits</h3>
+                <span class="category-card-count">4 Products →</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 2 -->
+        <a href="catalog.html?category=publications" class="category-card reveal delay-200">
+          <div class="category-card-media">
+            <img src="assets/images/founder-osie-book.jpg" alt="Books and Clinical Guides" data-cms-field="cat_2_img">
+            <div class="category-card-overlay">
+              <div>
+                <h3 class="category-card-title" data-cms-field="cat_2_title">Books & Monographs</h3>
+                <span class="category-card-count">4 Products →</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 3 -->
+        <a href="catalog.html?category=masterclasses" class="category-card reveal delay-300">
+          <div class="category-card-media">
+            <img src="assets/images/lecture-retreat.jpg" alt="Masterclass Passes" data-cms-field="cat_3_img">
+            <div class="category-card-overlay">
+              <div>
+                <h3 class="category-card-title" data-cms-field="cat_3_title">Passports & Residencies</h3>
+                <span class="category-card-count">3 Products →</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 4 -->
+        <a href="catalog.html?category=somatic-tools" class="category-card reveal delay-100">
+          <div class="category-card-media">
+            <img src="assets/images/lecture-spine.jpg" alt="Somatic Spinal Tools" data-cms-field="cat_4_img">
+            <div class="category-card-overlay">
+              <div>
+                <h3 class="category-card-title" data-cms-field="cat_4_title">Somatic Spinal Tools</h3>
+                <span class="category-card-count">4 Products →</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 5 -->
+        <a href="catalog.html?category=apparel-gear" class="category-card reveal delay-200">
+          <div class="category-card-media">
+            <img src="assets/images/private-healing.jpg" alt="Practitioner Apparel" data-cms-field="cat_5_img">
+            <div class="category-card-overlay">
+              <div>
+                <h3 class="category-card-title" data-cms-field="cat_5_title">Practitioner Gear</h3>
+                <span class="category-card-count">3 Products →</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CMS MODULE 05: SLEEK FEATURED PRODUCTS
+  =========================================== -->
+  <section data-cms-section="featured-products" class="section" style="background-color: var(--color-surface-low);">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 2rem;" class="reveal">
+        <div>
+          <span class="label-uppercase mb-2" data-cms-field="feat_tag">Selected Highlights</span>
+          <h2 data-cms-field="feat_headline">Featured Academy Products</h2>
+        </div>
+        <a href="catalog.html" class="btn btn-ghost" data-cms-field="feat_view_all">
+          View All <span class="material-symbols-outlined dir-flip" style="font-size:16px;">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="products-grid products-grid-3">
+        <!-- Product 1 -->
+        <article class="product-card reveal delay-100">
+          <div class="product-card-media">
+            <div class="product-badges-stack">
+              <span class="product-badge badge-bestseller">Bestseller</span>
+              <span class="product-badge badge-sale">-16%</span>
+            </div>
+            <a href="product.html?id=prod-01">
+              <img src="assets/images/course-spiritual-medicine.jpg" alt="Clinical Diagnostics Kit" class="product-card-img" data-cms-field="prod_1_img">
+              <img src="assets/images/lecture-spine.jpg" alt="Alternate view" class="product-card-hover-img">
+            </a>
+            <div class="product-quick-actions">
+              <button class="btn-quick-view" data-quick-view="prod-01">
+                <span class="material-symbols-outlined" style="font-size: 15px;">visibility</span> Quick View
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-categories" data-cms-field="prod_1_cat">Clinical Kits • Somatic Tools</div>
+            <h3 class="product-card-title"><a href="product.html?id=prod-01" data-cms-field="prod_1_title">The 1 Method Complete Clinical Diagnostics Kit</a></h3>
+            <div class="product-card-rating">
+              <div class="stars-row">
+                <span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+              </div>
+              <span class="rating-count">(128)</span>
+            </div>
+            <div class="product-card-pricing-row">
+              <div>
+                <div class="price-box">
+                  <span class="price-current">$285.00</span>
+                  <span class="price-original">$340.00</span>
+                </div>
+                <div class="product-card-stock-dot" style="margin-top:0.2rem;">
+                  <span class="stock-indicator-dot in"></span>
+                  <span style="color:var(--color-stock-in);">In Stock</span>
+                </div>
+              </div>
+              <button class="btn-card-quick-add" data-card-add="prod-01" data-variant-id="v-01-clin" title="Quick Add to Cart">
+                <span class="material-symbols-outlined" style="font-size:18px;">add_shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card reveal delay-200">
+          <div class="product-card-media">
+            <div class="product-badges-stack">
+              <span class="product-badge badge-bestseller">Bestseller</span>
+              <span class="product-badge badge-sale">-20%</span>
+            </div>
+            <a href="product.html?id=prod-02">
+              <img src="assets/images/founder-osie-book.jpg" alt="Definitive Volume Book" class="product-card-img" data-cms-field="prod_2_img">
+              <img src="assets/images/private-healing-book.jpg" alt="Alternate view" class="product-card-hover-img">
+            </a>
+            <div class="product-quick-actions">
+              <button class="btn-quick-view" data-quick-view="prod-02">
+                <span class="material-symbols-outlined" style="font-size: 15px;">visibility</span> Quick View
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-categories" data-cms-field="prod_2_cat">Publications</div>
+            <h3 class="product-card-title"><a href="product.html?id=prod-02" data-cms-field="prod_2_title">Spiritual Medicine & Clinical Rehabilitation: The Definitive Volume</a></h3>
+            <div class="product-card-rating">
+              <div class="stars-row">
+                <span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+              </div>
+              <span class="rating-count">(246)</span>
+            </div>
+            <div class="product-card-pricing-row">
+              <div>
+                <div class="price-box">
+                  <span class="price-current">$68.00</span>
+                  <span class="price-original">$85.00</span>
+                </div>
+                <div class="product-card-stock-dot" style="margin-top:0.2rem;">
+                  <span class="stock-indicator-dot in"></span>
+                  <span style="color:var(--color-stock-in);">In Stock</span>
+                </div>
+              </div>
+              <button class="btn-card-quick-add" data-card-add="prod-02" data-variant-id="v-02-hard" title="Quick Add to Cart">
+                <span class="material-symbols-outlined" style="font-size:18px;">add_shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card reveal delay-300">
+          <div class="product-card-media">
+            <div class="product-badges-stack">
+              <span class="product-badge badge-new">New</span>
+              <span class="product-badge badge-sale">-18%</span>
+            </div>
+            <a href="product.html?id=prod-03">
+              <img src="assets/images/lecture-spine.jpg" alt="Bio-Somatic Spinal Wedge" class="product-card-img" data-cms-field="prod_3_img">
+              <img src="assets/images/course-rehabilitation.jpg" alt="Alternate view" class="product-card-hover-img">
+            </a>
+            <div class="product-quick-actions">
+              <button class="btn-quick-view" data-quick-view="prod-03">
+                <span class="material-symbols-outlined" style="font-size: 15px;">visibility</span> Quick View
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-categories" data-cms-field="prod_3_cat">Somatic Tools • Clinical Kits</div>
+            <h3 class="product-card-title"><a href="product.html?id=prod-03" data-cms-field="prod_3_title">Bio-Somatic Spinal Alignment Wedge & Decompression Roll</a></h3>
+            <div class="product-card-rating">
+              <div class="stars-row">
+                <span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star_half</span>
+              </div>
+              <span class="rating-count">(74)</span>
+            </div>
+            <div class="product-card-pricing-row">
+              <div>
+                <div class="price-box">
+                  <span class="price-current">$110.00</span>
+                  <span class="price-original">$135.00</span>
+                </div>
+                <div class="product-card-stock-dot" style="margin-top:0.2rem;">
+                  <span class="stock-indicator-dot in"></span>
+                  <span style="color:var(--color-stock-in);">In Stock</span>
+                </div>
+              </div>
+              <button class="btn-card-quick-add" data-card-add="prod-03" data-variant-id="v-03-std" title="Quick Add to Cart">
+                <span class="material-symbols-outlined" style="font-size:18px;">add_shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CMS MODULE 06: PROMOTIONAL SPLIT BANNER
+  =========================================== -->
+  <section data-cms-section="promo-banner" class="section">
+    <div class="container">
+      <div class="promo-split-banner reveal">
+        <div class="promo-split-content">
+          <span class="label-uppercase" style="color: var(--color-secondary-dim); margin-bottom: 0.75rem; display: block; letter-spacing: 0.1em;" data-cms-field="promo_tag">
+            Limited Academic Bundle
+          </span>
+          <h2 class="promo-split-title" data-cms-field="promo_headline">
+            The Practitioner Vanguard Certification Bundle
+          </h2>
+          <p class="promo-split-desc" data-cms-field="promo_desc">
+            Acquire both the Complete Clinical Diagnostics Kit and the Definitive Monograph Volume, plus 3 months complimentary access to the Global Masterclass archive. Save over $120.
+          </p>
+          <div class="promo-split-actions">
+            <a href="product.html?id=prod-01" class="btn btn-secondary" data-cms-field="promo_cta">
+              Claim Academic Bundle ($325)
+            </a>
+            <span class="promo-coupon-badge">
+              Use coupon <strong>WELCOME20</strong> for 20% off
+            </span>
+          </div>
+        </div>
+
+        <div class="promo-split-media">
+          <img src="assets/images/transformation-path.jpg" alt="Practitioner Certification Bundle" data-cms-field="promo_img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CMS MODULE 07: BESTSELLERS GRID
+  =========================================== -->
+  <section data-cms-section="bestsellers" class="section" style="background-color: var(--color-surface-low);">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 2rem;" class="reveal">
+        <div>
+          <span class="label-uppercase mb-2" data-cms-field="bs_tag">Community Favorites</span>
+          <h2 data-cms-field="bs_headline">Academy Best Sellers</h2>
+        </div>
+        <a href="catalog.html?sort=bestseller" class="btn btn-ghost" data-cms-field="bs_view_all">
+          View All Best Sellers <span class="material-symbols-outlined dir-flip" style="font-size:16px;">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="products-grid">
+        <!-- Bestseller 1 -->
+        <article class="product-card reveal delay-100">
+          <div class="product-card-media">
+            <div class="product-badges-stack">
+              <span class="product-badge badge-bestseller">Top Rated</span>
+            </div>
+            <a href="product.html?id=prod-04">
+              <img src="assets/images/lecture-retreat.jpg" alt="Masterclass Annual Passport" class="product-card-img">
+              <img src="assets/images/course-consciousness.jpg" alt="Alternate view" class="product-card-hover-img">
+            </a>
+            <div class="product-quick-actions">
+              <button class="btn-quick-view" data-quick-view="prod-04">
+                <span class="material-symbols-outlined" style="font-size: 15px;">visibility</span> Quick View
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-categories">Masterclasses</div>
+            <h3 class="product-card-title"><a href="product.html?id=prod-04">Global Masterclass Annual Digital Academic Passport</a></h3>
+            <div class="product-card-rating">
+              <div class="stars-row"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div>
+              <span class="rating-count">(312)</span>
+            </div>
+            <div class="product-card-pricing-row">
+              <div>
+                <div class="price-box">
+                  <span class="price-current">$480.00</span>
+                  <span class="price-original">$600.00</span>
+                </div>
+                <div class="product-card-stock-dot" style="margin-top:0.2rem;">
+                  <span class="stock-indicator-dot in"></span>
+                  <span style="color:var(--color-stock-in);">Digital Pass</span>
+                </div>
+              </div>
+              <button class="btn-card-quick-add" data-card-add="prod-04" data-variant-id="v-04-ind" title="Quick Add to Cart">
+                <span class="material-symbols-outlined" style="font-size:18px;">add_shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bestseller 2 -->
+        <article class="product-card reveal delay-200">
+          <div class="product-card-media">
+            <div class="product-badges-stack">
+              <span class="product-badge badge-bestseller">Bestseller</span>
+            </div>
+            <a href="product.html?id=prod-07">
+              <img src="assets/images/private-healing-book.jpg" alt="Clinical Protocol Cards" class="product-card-img">
+              <img src="assets/images/article-aristotle.jpg" alt="Alternate view" class="product-card-hover-img">
+            </a>
+            <div class="product-quick-actions">
+              <button class="btn-quick-view" data-quick-view="prod-07">
+                <span class="material-symbols-outlined" style="font-size: 15px;">visibility</span> Quick View
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-categories">Publications • Clinical Kits</div>
+            <h3 class="product-card-title"><a href="product.html?id=prod-07">Clinical Protocol Cards: 50 Somatic Trauma Interventions</a></h3>
+            <div class="product-card-rating">
+              <div class="stars-row"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div>
+              <span class="rating-count">(189)</span>
+            </div>
+            <div class="product-card-pricing-row">
+              <div>
+                <div class="price-box">
+                  <span class="price-current">$45.00</span>
+                  <span class="price-original">$55.00</span>
+                </div>
+                <div class="product-card-stock-dot" style="margin-top:0.2rem;">
+                  <span class="stock-indicator-dot in"></span>
+                  <span style="color:var(--color-stock-in);">In Stock</span>
+                </div>
+              </div>
+              <button class="btn-card-quick-add" data-card-add="prod-07" data-variant-id="v-07-eng" title="Quick Add to Cart">
+                <span class="material-symbols-outlined" style="font-size:18px;">add_shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bestseller 3 -->
+        <article class="product-card reveal delay-300">
+          <div class="product-card-media">
+            <div class="product-badges-stack">
+              <span class="product-badge badge-new">New Release</span>
+            </div>
+            <a href="product.html?id=prod-06">
+              <img src="assets/images/lecture-mapping.jpg" alt="Harmonic Tuning Stethoscope" class="product-card-img">
+              <img src="assets/images/course-rehabilitation.jpg" alt="Alternate view" class="product-card-hover-img">
+            </a>
+            <div class="product-quick-actions">
+              <button class="btn-quick-view" data-quick-view="prod-06">
+                <span class="material-symbols-outlined" style="font-size: 15px;">visibility</span> Quick View
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-categories">Clinical Kits • Somatic Tools</div>
+            <h3 class="product-card-title"><a href="product.html?id=prod-06">Harmonic Somatic Tuning Stethoscope</a></h3>
+            <div class="product-card-rating">
+              <div class="stars-row"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div>
+              <span class="rating-count">(37)</span>
+            </div>
+            <div class="product-card-pricing-row">
+              <div>
+                <div class="price-box">
+                  <span class="price-current">$195.00</span>
+                  <span class="price-original">$230.00</span>
+                </div>
+                <div class="product-card-stock-dot" style="margin-top:0.2rem;">
+                  <span class="stock-indicator-dot in"></span>
+                  <span style="color:var(--color-stock-in);">In Stock</span>
+                </div>
+              </div>
+              <button class="btn-card-quick-add" data-card-add="prod-06" data-variant-id="v-06-std" title="Quick Add to Cart">
+                <span class="material-symbols-outlined" style="font-size:18px;">add_shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bestseller 4 -->
+        <article class="product-card reveal delay-400">
+          <div class="product-card-media">
+            <div class="product-badges-stack">
+              <span class="product-badge badge-new">New</span>
+            </div>
+            <a href="product.html?id=prod-05">
+              <img src="assets/images/private-healing.jpg" alt="Practitioner Somatic Linen Lab Tunic" class="product-card-img">
+              <img src="assets/images/course-spiritual-medicine.jpg" alt="Alternate view" class="product-card-hover-img">
+            </a>
+            <div class="product-quick-actions">
+              <button class="btn-quick-view" data-quick-view="prod-05">
+                <span class="material-symbols-outlined" style="font-size: 15px;">visibility</span> Quick View
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-categories">Practitioner Apparel & Gear</div>
+            <h3 class="product-card-title"><a href="product.html?id=prod-05">Practitioner Somatic Linen Lab Tunic</a></h3>
+            <div class="product-card-rating">
+              <div class="stars-row"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star_half</span></div>
+              <span class="rating-count">(43)</span>
+            </div>
+            <div class="product-card-pricing-row">
+              <div>
+                <div class="price-box">
+                  <span class="price-current">$135.00</span>
+                  <span class="price-original">$160.00</span>
+                </div>
+                <div class="product-card-stock-dot" style="margin-top:0.2rem;">
+                  <span class="stock-indicator-dot in"></span>
+                  <span style="color:var(--color-stock-in);">In Stock</span>
+                </div>
+              </div>
+              <button class="btn-card-quick-add" data-card-add="prod-05" data-variant-id="v-05-m-navy" title="Quick Add to Cart">
+                <span class="material-symbols-outlined" style="font-size:18px;">add_shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CMS MODULE 08: FOOTER (EXISTING THEME)
+  =========================================== -->
+  <footer data-cms-section="footer" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand" data-cms-field="footer_brand">The 1 Method</div>
+          <p style="color: rgba(255, 255, 255, 0.85); font-size: 0.9375rem; line-height: 1.6; max-width: 400px; margin-top: 1.25rem;" data-cms-field="footer_tagline">Pioneering the future of clinical medicine through consciousness and soul-led rehabilitation. The 1 Method provides certified academic training, cutting-edge research, and somatic healing protocols to bridge the gap between traditional healthcare and profound spiritual restoration.</p>
+        </div>
+
+        <div>
+          <h5 style="margin-bottom: 1.25rem; font-family: var(--font-sans); color: var(--color-secondary-dim);" data-cms-field="footer_col_1_title">Store & Catalog</h5>
+          <ul class="footer-links">
+            <li><a href="catalog.html">All Products</a></li>
+            <li><a href="catalog.html?category=clinical-kits">Clinical Diagnostic Kits</a></li>
+            <li><a href="catalog.html?category=publications">Books & Clinical Guides</a></li>
+            <li><a href="catalog.html?category=masterclasses">Masterclass Passports</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 style="margin-bottom: 1.25rem; font-family: var(--font-sans); color: var(--color-secondary-dim);" data-cms-field="footer_col_2_title">Support & Care</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#faq">Admissions FAQ</a></li>
+            <li><a href="#">Worldwide Insured Shipping</a></li>
+            <li><a href="#">30-Day Clinical Guarantee</a></li>
+            <li><a href="#">Privacy & Ethics Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 style="margin-bottom: 1.25rem; font-family: var(--font-sans); color: var(--color-secondary-dim);" data-cms-field="footer_col_3_title">Connect</h5>
+          <div style="display:flex; gap: 0.75rem;">
+            <a href="#" class="btn-icon" aria-label="Website"><span class="material-symbols-outlined">language</span></a>
+            <a href="#" class="btn-icon" aria-label="Email Us"><span class="material-symbols-outlined">mail</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom" data-cms-field="footer_copyright">
+        © 2026 The 1 Method Academy of Spiritual Medicine. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==========================================
+       SHARED MODALS & DRAWERS
+  =========================================== -->
+
+  <!-- Slide-out Mini-Cart Drawer -->
+  <div class="cart-drawer-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping Cart Drawer">
+    <div class="cart-drawer-header">
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <span class="material-symbols-outlined" style="color:var(--color-secondary);">shopping_bag</span>
+        <h3 class="cart-drawer-title" data-i18n="cart">Your Cart</h3>
+      </div>
+      <button class="cart-drawer-close btn-icon" aria-label="Close Cart"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="cart-drawer-items"></div>
+    <div class="cart-drawer-footer"></div>
+  </aside>
+
+  <!-- Quick-View Modal -->
+  <div id="quick-view-modal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-dialog quick-view-dialog">
+      <button class="modal-close" aria-label="Close Quick View"><span class="material-symbols-outlined">close</span></button>
+      <div class="quick-view-content"></div>
+    </div>
+  </div>
+
+  <!-- Live Search Modal Overlay -->
+  <div id="search-modal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-dialog search-modal-dialog">
+      <div class="search-modal-header">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="text" id="search-modal-input" placeholder="Search clinical tools, books, passports..." aria-label="Search">
+        <button class="modal-close" aria-label="Close Search"><span class="material-symbols-outlined">close</span></button>
+      </div>
+      <div class="search-results-list"></div>
+    </div>
+  </div>
+
+  <!-- CMS Field Inspector Modal -->
+  <div id="cms-field-modal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-dialog" style="max-width: 500px;">
+      <button class="modal-close" aria-label="Close Inspector"><span class="material-symbols-outlined">close</span></button>
+      <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem; color: var(--color-secondary);">
+        <span class="material-symbols-outlined">edit_note</span>
+        <span class="label-uppercase">CMS Field Inspector</span>
+      </div>
+      <h3 class="cms-modal-field-title" style="font-family: monospace; font-size: 1.1rem; margin-bottom: 1rem;">hero.headline</h3>
+      <div class="form-group">
+        <label class="form-label">Simulate Field Value Edit</label>
+        <textarea class="form-input cms-modal-field-input" rows="4"></textarea>
+      </div>
+      <div style="display:flex; justify-content:flex-end; gap: 0.75rem; margin-top: 1rem;">
+        <button class="btn btn-outline modal-close">Cancel</button>
+        <button class="btn btn-primary cms-modal-save-btn">Update Live Field</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CMS Inspector Bottom Toolbar -->
+  <div class="cms-toolbar">
+    <div class="cms-toolbar-status">
+      <div class="cms-indicator-dot"></div>
+      <span>CMS Store Modules Ready</span>
+    </div>
+    <div style="height: 18px; width: 1px; background: rgba(255,255,255,0.2);"></div>
+    <button id="cms-mode-toggle" class="cms-btn-toggle">
+      <span class="material-symbols-outlined" style="font-size:16px;">dashboard_customize</span> Inspect CMS Fields
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/store-main.js"></script>
+</body>
+</html>
