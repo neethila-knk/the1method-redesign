@@ -1,0 +1,41 @@
+<!-- ==========================================================================
+     THE 1 METHOD — STANDALONE STORE ADAPTIVE EMBED SNIPPET
+     Self-contained HTML section with Adaptive Design System & LTR/RTL support.
+     Paste this snippet anywhere in your HTML page or CMS template.
+     ========================================================================== -->
+
+<!-- 1. Include The Standalone Store Stylesheet -->
+<link rel="stylesheet" href="css/standalone-store.css">
+
+<!-- 2. Self-Contained Store Section Container
+     Parameters you can configure on this tag:
+     - data-lang="en" | "es" | "he"   (Language selection)
+     - dir="ltr" | "rtl"              (Text & layout direction)
+     - data-theme="dark" | "light"    (Explicit dark or light theme)
+-->
+<section id="t1m-standalone-store" data-lang="en" data-dir="ltr"></section>
+
+<!-- 3. Include Standalone Store Runtime Engine -->
+<script src="js/standalone-store.js"></script>
+
+<!-- ==========================================================================
+     4. OPTIONAL: ADAPTIVE DESIGN SYSTEM TOKENS
+     Add this CSS to your site to rebrand the store to match any website instantly!
+     ========================================================================== -->
+<style>
+  #t1m-standalone-store {
+    /* Brand Colors */
+    --color-primary: #0b1c30;       /* Header and primary dark accents */
+    --color-secondary: #3755c3;     /* Buttons, badges, and primary call-to-actions */
+    --color-surface-card: #ffffff;  /* Product card background */
+    --color-surface-low: #f8f9ff;   /* Section background */
+    
+    /* Typography */
+    --font-serif: 'Libre Caslon Text', Georgia, serif; /* Product titles & headings */
+    --font-sans: 'Hanken Grotesk', sans-serif;         /* Body and button text */
+
+    /* Corner Radii */
+    --radius-sm: 6px;               /* Buttons & inputs */
+    --radius-md: 12px;              /* Product cards */
+  }
+</style>

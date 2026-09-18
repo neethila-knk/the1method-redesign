@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/ecommerce.css">
   <link rel="stylesheet" href="css/cms-inspector.css">
+  <link rel="stylesheet" href="css/standalone-store.css">
 </head>
 <body>
 
@@ -36,11 +37,11 @@
         <li><a href="#healing" class="nav-link" data-cms-field="menu_item_3">Healing</a></li>
         <li><a href="#community" class="nav-link" data-cms-field="menu_item_4">Community</a></li>
         <li><a href="#journal" class="nav-link" data-cms-field="menu_item_5">Articles</a></li>
-        <li><a href="store.html" class="nav-link" data-cms-field="menu_item_store" style="color: var(--color-secondary); font-weight: 700;">Store</a></li>
+        <li><a href="#store-section" class="nav-link" data-cms-field="menu_item_store" style="color: var(--color-secondary); font-weight: 700;">Store</a></li>
       </ul>
 
       <div class="nav-actions">
-        <a href="store.html" class="btn-icon" aria-label="Academy Store" title="Store & Apparatus">
+        <a href="#store-section" class="btn-icon" aria-label="Academy Store" title="Store & Apparatus">
           <span class="material-symbols-outlined">storefront</span>
         </a>
         <a href="cart.html" class="btn-icon" aria-label="Shopping Cart" title="Shopping Cart">
@@ -98,7 +99,7 @@
       <li><a href="#healing" class="nav-link">Healing</a></li>
       <li><a href="#community" class="nav-link">Community</a></li>
       <li><a href="#journal" class="nav-link">Articles</a></li>
-      <li><a href="store.html" class="nav-link" style="color:var(--color-secondary); font-weight:700;">Store & Apparatus</a></li>
+      <li><a href="#store-section" class="nav-link" style="color:var(--color-secondary); font-weight:700;">Store & Apparatus</a></li>
     </ul>
     <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top: auto;">
       <!-- Luxury Tactile Mobile Drawer Language Chips -->
@@ -110,7 +111,7 @@
           <button class="drawer-lang-chip" data-lang="he">עברית</button>
         </div>
       </div>
-      <a href="store.html" class="btn btn-secondary" style="width:100%;">Visit Store</a>
+      <a href="#store-section" class="btn btn-secondary" style="width:100%;">Visit Store</a>
       <button class="btn btn-primary" data-open-modal="modal-apply" style="width:100%;">Apply Now</button>
     </div>
   </aside>
@@ -791,6 +792,14 @@
 
 
   <!-- ==========================================
+       CMS MODULE: STANDALONE STORE SECTION
+  =========================================== -->
+  <section id="store-section" data-cms-section="standalone-store" style="border-top: 1px solid var(--color-card-border); background: var(--color-surface-low);">
+    <div id="t1m-standalone-store"></div>
+  </section>
+
+
+  <!-- ==========================================
        CMS MODULE 15: NEWSLETTER CTA
   =========================================== -->
   <section data-cms-section="newsletter-cta" class="section newsletter-section">
@@ -946,5 +955,7 @@
 
   <!-- ES6 Module Script -->
   <script type="module" src="js/main.js"></script>
+  <!-- Standalone Store Controller Script -->
+  <script src="js/standalone-store.js"></script>
 </body>
 </html>

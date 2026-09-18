@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standalone Store Entity & Design System | The 1 Method</title>
+  <meta name="description" content="Adaptive Design System for The 1 Method Standalone Store Component. Seamlessly inherits fonts, colors, and styling from any host site.">
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Heebo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Core Site Design System Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <!-- The Standalone Store Adaptive Stylesheet -->
+  <link rel="stylesheet" href="css/standalone-store.css">
+
+  <style>
+    /* Interactive Design System Live Customizer Bar */
+    .ds-customizer-bar {
+      position: sticky;
+      top: 0;
+      z-index: 2000;
+      background: #0b1c30;
+      color: #ffffff;
+      border-bottom: 2px solid var(--color-secondary);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      font-size: 0.8rem;
+    }
+
+    .ds-brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(55, 85, 195, 0.2);
+      color: var(--color-secondary-dim);
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      border: 1px solid rgba(55, 85, 195, 0.4);
+    }
+
+    .ds-controls-cluster {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .ds-group {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .ds-label {
+      font-weight: 600;
+      color: #94a3b8;
+      font-size: 0.75rem;
+      margin-right: 0.2rem;
+    }
+
+    .ds-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .ds-btn:hover,
+    .ds-btn.active {
+      background: var(--color-secondary);
+      border-color: var(--color-secondary);
+      color: #ffffff;
+    }
+
+    .ds-color-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .ds-btn-code {
+      background: linear-gradient(135deg, #3755c3, #1e3a8a);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 0.4rem 0.85rem;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .ds-btn-code:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(55, 85, 195, 0.4);
+    }
+
+    /* Modal for Integration Tokens */
+    .ds-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(6px);
+      z-index: 999999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .ds-modal-backdrop.open { display: flex; }
+
+    .ds-code-dialog {
+      background: #0b1c30;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 12px;
+      max-width: 740px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2rem;
+      color: #ffffff;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .ds-code-snippet {
+      background: #040911;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 1rem;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.825rem;
+      color: #38bdf8;
+      overflow-x: auto;
+      margin: 0.75rem 0 1.25rem 0;
+      position: relative;
+    }
+
+    .ds-copy-btn {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      padding: 0.25rem 0.55rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .ds-customizer-bar {
+        padding: 0.65rem 0.85rem;
+        gap: 0.5rem;
+      }
+      .ds-controls-cluster {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 0.45rem;
+      }
+      .ds-group {
+        flex-wrap: wrap;
+      }
+      .ds-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.7rem;
+      }
+      .ds-btn-code {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       DESIGN SYSTEM LIVE INTERACTIVE CUSTOMIZER BAR
+  =========================================== -->
+  <aside class="ds-customizer-bar" aria-label="Design System Live Customizer">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <span class="ds-brand-pill">
+        <span class="material-symbols-outlined" style="font-size: 14px;">palette</span>
+        Design System
+      </span>
+      <span style="font-weight: 500; color: #cbd5e1;">Live Theme & Branding Inspector</span>
+    </div>
+
+    <div class="ds-controls-cluster">
+      <!-- Site Brand Presets -->
+      <div class="ds-group">
+        <span class="ds-label">Brand:</span>
+        <button class="ds-btn active" id="brand-t1m" title="The 1 Method (Navy & Sapphire)">
+          <span class="ds-color-dot" style="background:#3755c3;"></span> The 1 Method
+        </button>
+        <button class="ds-btn" id="brand-vanguard" title="Vanguard Bio-Clinic (Emerald & Mint)">
+          <span class="ds-color-dot" style="background:#2d6a4f;"></span> Vanguard
+        </button>
+        <button class="ds-btn" id="brand-amber" title="Monograph Press (Warm Terra Cotta)">
+          <span class="ds-color-dot" style="background:#c25920;"></span> Monograph
+        </button>
+      </div>
+
+      <!-- Typography Presets -->
+      <div class="ds-group">
+        <span class="ds-label">Fonts:</span>
+        <button class="ds-btn active" id="font-classic">Classic Serif</button>
+        <button class="ds-btn" id="font-modern">Clean Sans</button>
+      </div>
+
+      <!-- Language & Direction -->
+      <div class="ds-group">
+        <span class="ds-label">Mode:</span>
+        <button class="ds-btn active" id="lang-en" data-lang="en" data-dir="ltr">EN (LTR)</button>
+        <button class="ds-btn" id="lang-he" data-lang="he" data-dir="rtl">עברית (RTL)</button>
+      </div>
+
+      <!-- Embed Guide Button -->
+      <button class="ds-btn-code" id="ds-open-modal-btn">
+        <span class="material-symbols-outlined" style="font-size:16px;">code</span>
+        Copy Integration Tokens
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       SITE TOP NAVIGATION (EXISTING THEME)
+  =========================================== -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="nav-brand">The 1 Method</a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html#methodology" class="nav-link">Methodology</a></li>
+        <li><a href="index.html#academy" class="nav-link">Academy</a></li>
+        <li><a href="index.html#healing" class="nav-link">Healing</a></li>
+        <li><a href="index.html#community" class="nav-link">Community</a></li>
+        <li><a href="index.html#journal" class="nav-link">Articles</a></li>
+        <li><a href="#store-section" class="nav-link active" style="color: var(--color-secondary); font-weight: 700;">Store</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#store-section" class="btn-icon" aria-label="Store"><span class="material-symbols-outlined">storefront</span></a>
+        <button class="btn btn-primary" data-open-modal="modal-apply">Apply Now</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Introductory Page Context (Seamless, Non-Alien) -->
+    <section class="section" style="padding: 3.5rem 0 1.5rem 0; background: var(--color-surface);">
+      <div class="container" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <span class="label-uppercase mb-2" style="color: var(--color-secondary); font-weight: 700;">
+          Adaptive Standalone Architecture
+        </span>
+        <h1 style="font-family: var(--font-serif); font-size: clamp(2.2rem, 3.8vw, 3.2rem); margin-bottom: 1rem; line-height: 1.15;">
+          The Standalone Store Entity
+        </h1>
+        <p style="color: var(--color-on-surface-variant); font-size: 1.05rem; line-height: 1.6; margin: 0 auto;">
+          The store below is a <strong>self-contained HTML page section</strong>. It automatically adopts the colors, typography, borders, and direction of whatever website it is placed into. It has no foreign header or footer—it operates seamlessly anywhere.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         THE STANDALONE STORE SECTION
+         (This is the exact section that can be dropped onto any website or page)
+         ========================================================================== -->
+    <section id="store-section" class="t1m-standalone-store-wrap" style="border-top: 1px solid var(--color-card-border); border-bottom: 1px solid var(--color-card-border);">
+      <div id="t1m-standalone-store" data-lang="en" data-dir="ltr">
+        <!-- Self-contained store mounts dynamically here -->
+      </div>
+    </section>
+
+    <!-- Page Content Below Store -->
+    <section class="section" style="background: var(--color-surface); padding: 4.5rem 0; text-align: center;">
+      <div class="container" style="max-width: 760px; margin: 0 auto;">
+        <span class="material-symbols-outlined" style="color: var(--color-secondary); font-size: 2.75rem; margin-bottom: 1rem;">verified_user</span>
+        <h3 style="font-family: var(--font-serif); font-size: 1.75rem; margin-bottom: 0.75rem;">
+          Clinical Governance & Accreditation
+        </h3>
+        <p style="color: var(--color-on-surface-variant); line-height: 1.65; margin: 0;">
+          Every instrument, clinical guide, and somatic spinal rehabilitation apparatus is designed under strict physiotherapy tolerances for certified practitioners worldwide.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER (EXISTING THEME) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">The 1 Method</div>
+          <p style="color: rgba(255, 255, 255, 0.85); font-size: 0.9375rem; line-height: 1.6; max-width: 400px; margin-top: 1.25rem;">
+            Pioneering the future of clinical medicine through consciousness and soul-led rehabilitation.
+          </p>
+        </div>
+        <div>
+          <h5 style="margin-bottom: 1.25rem; font-family: var(--font-sans); color: var(--color-secondary-dim);">Store & Apparatus</h5>
+          <ul class="footer-links">
+            <li><a href="#store-section">Clinical Kits</a></li>
+            <li><a href="#store-section">Books & Monographs</a></li>
+            <li><a href="#store-section">Masterclass Passports</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 style="margin-bottom: 1.25rem; font-family: var(--font-sans); color: var(--color-secondary-dim);">Assurance</h5>
+          <ul class="footer-links">
+            <li><a href="#">30-Day Clinical Guarantee</a></li>
+            <li><a href="#">Worldwide Insured Shipping</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 The 1 Method Academy of Spiritual Medicine. Standalone E-Commerce Component.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       INTEGRATION TOKENS MODAL
+  =========================================== -->
+  <div class="ds-modal-backdrop" id="ds-code-modal">
+    <div class="ds-code-dialog">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+        <div>
+          <h3 style="margin: 0; font-family: var(--font-serif); font-size: 1.4rem;">
+            How to Integrate on Any Website
+          </h3>
+          <p style="margin: 0.35rem 0 0 0; font-size: 0.825rem; color: #94a3b8;">
+            The store uses an adaptive design system that maps directly to your site's CSS tokens.
+          </p>
+        </div>
+        <button id="ds-close-modal-btn" style="background: none; border: none; color: #fff; cursor: pointer;">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <h4 style="margin: 0 0 0.4rem 0; color: var(--color-secondary-dim); font-size: 0.9rem;">
+        1. Drop the HTML Section
+      </h4>
+      <div class="ds-code-snippet" id="snippet-html">
+&lt;!-- Include Scoped Stylesheet --&gt;
+&lt;link rel="stylesheet" href="css/standalone-store.css"&gt;
+
+&lt;!-- Self-Contained Section (Set lang="he" and dir="rtl" for Hebrew) --&gt;
+&lt;section id="t1m-standalone-store" data-lang="en" data-dir="ltr"&gt;&lt;/section&gt;
+
+&lt;!-- Include Store Engine --&gt;
+&lt;script src="js/standalone-store.js"&gt;&lt;/script&gt;
+        <button class="ds-copy-btn" data-copy="snippet-html">Copy</button>
+      </div>
+
+      <h4 style="margin: 1.25rem 0 0.4rem 0; color: var(--color-secondary-dim); font-size: 0.9rem;">
+        2. Brand it to Match Any Site with 5 CSS Variables
+      </h4>
+      <p style="font-size: 0.8rem; color: #94a3b8; margin: 0 0 0.5rem 0;">
+        Add this to your website stylesheet to customize fonts and colors instantly:
+      </p>
+      <div class="ds-code-snippet" id="snippet-css">
+#t1m-standalone-store {
+  --color-primary: #0b1c30;       /* Your brand primary header/dark color */
+  --color-secondary: #3755c3;     /* Your brand button/accent color */
+  --color-surface-card: #ffffff;  /* Product card background */
+  --font-serif: 'Libre Caslon Text', Georgia, serif; /* Heading font */
+  --font-sans: 'Hanken Grotesk', sans-serif;         /* Body font */
+}
+        <button class="ds-copy-btn" data-copy="snippet-css">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Standalone Store Controller Script -->
+  <script src="js/standalone-store.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const storeContainer = document.getElementById('t1m-standalone-store');
+
+      // Brand Presets
+      const btnT1m = document.getElementById('brand-t1m');
+      const btnVanguard = document.getElementById('brand-vanguard');
+      const btnAmber = document.getElementById('brand-amber');
+
+      function clearActiveBrands() {
+        [btnT1m, btnVanguard, btnAmber].forEach(b => b.classList.remove('active'));
+      }
+
+      btnT1m.addEventListener('click', () => {
+        clearActiveBrands();
+        btnT1m.classList.add('active');
+        window.The1MethodStore.setDesignTokens({
+          primary: '#0b1c30',
+          secondary: '#3755c3',
+          surface: '#ffffff',
+          cardBg: '#ffffff'
+        });
+      });
+
+      btnVanguard.addEventListener('click', () => {
+        clearActiveBrands();
+        btnVanguard.classList.add('active');
+        window.The1MethodStore.setDesignTokens({
+          primary: '#0d2818',
+          secondary: '#2d6a4f',
+          surface: '#f7f9f7',
+          cardBg: '#ffffff'
+        });
+      });
+
+      btnAmber.addEventListener('click', () => {
+        clearActiveBrands();
+        btnAmber.classList.add('active');
+        window.The1MethodStore.setDesignTokens({
+          primary: '#3d1c06',
+          secondary: '#c25920',
+          surface: '#faf7f2',
+          cardBg: '#ffffff'
+        });
+      });
+
+      // Fonts
+      const btnFontClassic = document.getElementById('font-classic');
+      const btnFontModern = document.getElementById('font-modern');
+
+      btnFontClassic.addEventListener('click', () => {
+        btnFontClassic.classList.add('active');
+        btnFontModern.classList.remove('active');
+        window.The1MethodStore.setDesignTokens({
+          fontSerif: "'Libre Caslon Text', Georgia, serif",
+          fontSans: "'Hanken Grotesk', sans-serif"
+        });
+      });
+
+      btnFontModern.addEventListener('click', () => {
+        btnFontModern.classList.add('active');
+        btnFontClassic.classList.remove('active');
+        window.The1MethodStore.setDesignTokens({
+          fontSerif: "'Inter', sans-serif",
+          fontSans: "'Inter', sans-serif"
+        });
+      });
+
+      // Language & Direction
+      const btnEn = document.getElementById('lang-en');
+      const btnHe = document.getElementById('lang-he');
+
+      btnEn.addEventListener('click', () => {
+        btnEn.classList.add('active');
+        btnHe.classList.remove('active');
+        window.The1MethodStore.setLanguage('en', 'ltr');
+      });
+
+      btnHe.addEventListener('click', () => {
+        btnHe.classList.add('active');
+        btnEn.classList.remove('active');
+        window.The1MethodStore.setLanguage('he', 'rtl');
+      });
+
+      // Code Modal
+      const codeModal = document.getElementById('ds-code-modal');
+      const openModalBtn = document.getElementById('ds-open-modal-btn');
+      const closeModalBtn = document.getElementById('ds-close-modal-btn');
+
+      openModalBtn.addEventListener('click', () => codeModal.classList.add('open'));
+      closeModalBtn.addEventListener('click', () => codeModal.classList.remove('open'));
+      codeModal.addEventListener('click', (e) => {
+        if (e.target === codeModal) codeModal.classList.remove('open');
+      });
+
+      // Copy helpers
+      document.querySelectorAll('.ds-copy-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-copy');
+          const block = document.getElementById(targetId);
+          if (block) {
+            const clone = block.cloneNode(true);
+            clone.querySelector('.ds-copy-btn')?.remove();
+            navigator.clipboard.writeText(clone.innerText.trim());
+            btn.textContent = 'Copied!';
+            setTimeout(() => btn.textContent = 'Copy', 2000);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
